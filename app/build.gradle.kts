@@ -79,7 +79,7 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
     implementation("com.google.dagger:hilt-android:2.48.1")
     kapt("com.google.dagger:hilt-android-compiler:2.44")
-    implementation("androidx.work:work-runtime-ktx:2.8.1")
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
 
     //room
     val room_version = "2.6.0"
@@ -95,4 +95,8 @@ dependencies {
     //retrofit
     val retrofit_version = "2.9.0"
     implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
+
+    //gsonconverter
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
 }
