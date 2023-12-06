@@ -5,39 +5,39 @@ import com.google.gson.annotations.SerializedName
 
 data class DailyBoxOffice(
     @SerializedName("audiAcc")
-    val audiAcc: String,
+    val audiAcc: String?,
     @SerializedName("audiChange")
-    val audiChange: String,
+    val audiChange: String?,
     @SerializedName("audiCnt")
-    val audiCnt: String,
+    val audiCnt: String?,
     @SerializedName("audiInten")
-    val audiInten: String,
+    val audiInten: String?,
     @SerializedName("movieCd")
-    val movieCd: String,
+    val movieCd: String?,
     @SerializedName("movieNm")
-    val movieNm: String,
+    val movieNm: String?,
     @SerializedName("openDt")
-    val openDt: String,
+    val openDt: String?,
     @SerializedName("rank")
-    val rank: String,
+    val rank: String?,
     @SerializedName("rankInten")
-    val rankInten: String,
+    val rankInten: String?,
     @SerializedName("rankOldAndNew")
-    val rankOldAndNew: String,
+    val rankOldAndNew: String?,
     @SerializedName("rnum")
-    val rnum: String,
+    val rnum: String?,
     @SerializedName("salesAcc")
-    val salesAcc: String,
+    val salesAcc: String?,
     @SerializedName("salesAmt")
-    val salesAmt: String,
+    val salesAmt: String?,
     @SerializedName("salesChange")
-    val salesChange: String,
+    val salesChange: String?,
     @SerializedName("salesInten")
-    val salesInten: String,
+    val salesInten: String?,
     @SerializedName("salesShare")
-    val salesShare: String,
+    val salesShare: String?,
     @SerializedName("scrnCnt")
-    val scrnCnt: String,
+    val scrnCnt: String?,
     @SerializedName("showCnt")
-    val showCnt: String
+    val showCnt: String?
 )

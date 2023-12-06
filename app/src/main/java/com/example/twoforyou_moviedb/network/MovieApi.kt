@@ -9,12 +9,11 @@ import javax.inject.Singleton
 
 @Singleton
 interface MovieApi {
-
-    @GET(Constant.BASE_URL)
+    @GET("searchDailyBoxOfficeList.json")
     suspend fun getMovie(
-        @Query("key") key : String = Constant.API_KEY,
-        @Query("targetDt") targetDate : String, //ex.20231204
-    ) : MovieList
+        @Query("key") key: String = Constant.API_KEY,
+        @Query("targetDt") targetDate: String, //ex.20231204
+    ): MovieList
 
 
 }

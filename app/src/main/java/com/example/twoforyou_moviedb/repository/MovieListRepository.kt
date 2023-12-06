@@ -13,7 +13,7 @@ class MovieListRepository @Inject constructor(private val movieApi: MovieApi) {
         val response = try {
             movieApi.getMovie(targetDate = targetDate)
         } catch (e: Exception) {
-            Log.d(TAG, "getMovieList: ${e.message}")
+            Log.d(TAG, "getMovieList error: ${e.message}")
             return null
         }
 

@@ -1,5 +1,6 @@
 package com.example.twoforyou_moviedb.screen.rating
 
+import androidx.compose.runtime.remember
 import androidx.lifecycle.ViewModel
 import com.example.twoforyou_moviedb.model.MovieList
 import com.example.twoforyou_moviedb.repository.MovieListRepository
