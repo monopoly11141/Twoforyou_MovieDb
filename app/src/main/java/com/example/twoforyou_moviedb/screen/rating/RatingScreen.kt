@@ -12,10 +12,6 @@ fun RatingScreen(
     navController: NavController,
     viewModel: RatingScreenViewModel = hiltViewModel()
 ) {
-    LaunchedEffect(true) {
-        val movieList = viewModel.getMovieList("231204")!!
-        Log.d(TAG, "RatingScreen: $movieList")
-    }
-
+    viewModel.getMovieList("231204")
 
 }

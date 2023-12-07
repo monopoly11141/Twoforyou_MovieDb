@@ -1,6 +1,6 @@
 package com.example.twoforyou_moviedb.di
 
-import com.example.twoforyou_moviedb.network.MovieApi
+import com.example.twoforyou_moviedb.data.remote.MovieApi
 import com.example.twoforyou_moviedb.util.Constant
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -19,15 +19,13 @@ class AppModule {
     @Provides
     @Singleton
     fun providesMovieApi(): MovieApi {
-        val gson = GsonBuilder()
-            .setLenient()
-            .create()
+        var gson= GsonBuilder().setLenient().create()
 
         return Retrofit.Builder()
-            .baseUrl(Constant.BASE_URL)
             .addConverterFactory(
                 GsonConverterFactory.create(gson)
             )
+            .baseUrl(Constant.BASE_URL)
             .build()
             .create(MovieApi::class.java)
 

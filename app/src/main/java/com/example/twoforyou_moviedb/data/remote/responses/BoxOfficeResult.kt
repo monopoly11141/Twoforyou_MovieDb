@@ -1,4 +1,4 @@
-package com.example.twoforyou_moviedb.model
+package com.example.twoforyou_moviedb.data.remote.responses
 
 
 import com.google.gson.annotations.SerializedName
